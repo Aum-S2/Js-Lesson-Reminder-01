@@ -30,3 +30,15 @@ let z;
 console.log(typeof name);
 */
 
+// string
+/*
+const name = 'Robert';
+const age = 33;
+
+// Concatenation
+console.log('my name is '+ name +' and i am '+ age);
+
+// Template String
+const Hello = `My name is ${name} and i am ${age}`;
+console.log(Hello);
+*/
