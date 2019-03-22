@@ -50,6 +50,7 @@ console.log(w.length);
 console.log(w.split(', '));
 */
 
+/*
 // Array - Variables that hold multiple values // Array is zero-based
 
 const Juices = new Array ('Orange Juice', 'Apple Juice', 'Watermelon Juice', 'Pineapple Juice');
@@ -68,6 +69,24 @@ console.log(Array.isArray(Juices)); // To check if this is an array (to get true
 console.log(Juices.indexOf('Applejuice')); // to get index of array (number of an array)
 
 console.log(Juices);
+*/
+
+// Object Literal
+
+const person = {
+  firstName: 'Dodge',
+  lastName: 'Smoothie',
+  age: '27',
+  hobbies: ['run', 'music', 'video games'],
+  address: {  
+    street: 'nageur 54/2 st',
+    city: 'livy',
+    state: 'ohiori'
+  }
+}
+
+console.log(person.firstName, person.lastName);
+
 
 
 
