@@ -17,6 +17,7 @@ items = 21;
 console.log(items);
 */
 
+
 // string, numbers, boolean, null, undefined 
 /*
 const name = 'Robert';
@@ -29,6 +30,8 @@ let z;
 
 console.log(typeof name);
 */
+
+
 
 // string
 /*
@@ -49,6 +52,8 @@ const w = 'Rice, Food, Drink, Snack, Cake';
 console.log(w.length);
 console.log(w.split(', '));
 */
+
+
 
 /*
 // Array - Variables that hold multiple values // Array is zero-based
@@ -71,8 +76,10 @@ console.log(Juices.indexOf('Applejuice')); // to get index of array (number of a
 console.log(Juices);
 */
 
-// Object Literal
 
+
+// Object Literal___________________________________
+/*
 const person = {
   firstName: 'Dodge',
   lastName: 'Smoothie',
@@ -84,9 +91,47 @@ const person = {
     state: 'ohiori'
   }
 }
+*/
+// console.log(person.address.city);
 
-console.log(person.firstName, person.lastName);
+/* this is part of es6
+const { firstName, lastName, address: { street }} = person;
+
+console.log(street);
+*/
+/* we can also add properties
+person.email = 'dodges12@gmail.com';
+
+console.log(person);
+*/
 
 
 
+// arrays of objects
+
+const todos = [
+  {
+  id: 1,
+    text: 'clean up room',
+    isCompleted: true
+  },
+  {
+  id: 2,
+    text: 'meeting at the same spot',
+    isCompleted: false
+  },
+  {
+  id: 3,
+    text: 'go workout',
+    isCompleted: true
+  }
+];
+
+// console.log(todos[1].text);
+
+// to convert to json in case you want to send data to a server
+/*
+const todosJSON = JSON.stringify(todos); 
+console.log(todosJSON);
+*/
 
