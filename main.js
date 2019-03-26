@@ -107,7 +107,7 @@ console.log(person);
 
 
 
-// arrays of objects
+// arrays of objects________________________
 
 const todos = [
   {
@@ -134,4 +134,29 @@ const todos = [
 const todosJSON = JSON.stringify(todos); 
 console.log(todosJSON);
 */
+
+/*
+// for loops
+for(let i = 0; i <= 10; i++){
+  console.log(`For Loop Numbers: ${i}`);
+}
+
+// while loops
+let i = 0;
+while(i < 10){
+  console.log(`While Loop Numbers: ${i}`);
+  i++;
+}
+*/
+
+
+// loops through arrays that use for loops - but there is a better way
+for(let i = 0; i < todos.length; i++){
+  console.log(todos[i].text);
+}
+
+// for of loops kinda structed - but easy to read
+for(let todo of todos) {
+  console.log(todo.text);
+}
 
