@@ -149,14 +149,43 @@ while(i < 10){
 }
 */
 
-
+/*
 // loops through arrays that use for loops - but there is a better way
 for(let i = 0; i < todos.length; i++){
   console.log(todos[i].text);
 }
+*/
 
-// for of loops kinda structed - but easy to read
+/*
+// for of loops kinda structed kinda similar - but easy to read
 for(let todo of todos) {
   console.log(todo.text);
 }
+*/
 
+/*
+// forEach
+todos.forEach(function(todo){
+  console.log(todo.text);
+});
+*/
+
+/*
+// map this will returned in arrays
+const todoText = todos.map(function(todo){
+  return todo.text;
+});
+
+console.log(todoText);
+*/
+
+/*
+// filter this will filter as it says /this will show in array just the text
+const todoCompleted = todos.filter(function(todo){
+  return todo.isCompleted === true;
+}).map(function(todo){
+  return todo.text;
+})
+
+console.log(todoCompleted);
+*/
