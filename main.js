@@ -223,3 +223,32 @@ if(x > 12 && y < 6){
 }
 */
 
+
+// Ternary Operator *********
+/*
+const x = 10;
+
+const color = x > 10? 'yellow' : 'green';
+
+console.log(color);
+*/
+
+/*
+// Switch
+const x = 10;
+
+const color = x > 10? 'yellow' : 'green'; // const color = 'red';
+
+switch(color){
+  case 'yellow':
+    console.log('color is yellow');
+    break;
+  case 'green':
+    console.log('color is green');
+    break;
+  default:
+  console.log('color is not yellow or green');
+  break;
+}
+*/
+
