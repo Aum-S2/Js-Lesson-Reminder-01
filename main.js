@@ -106,7 +106,7 @@ console.log(person);
 */
 
 
-
+/*
 // arrays of objects________________________
 
 const todos = [
@@ -126,6 +126,8 @@ const todos = [
     isCompleted: true
   }
 ];
+
+*/
 
 // console.log(todos[1].text);
 
@@ -189,3 +191,35 @@ const todoCompleted = todos.filter(function(todo){
 
 console.log(todoCompleted);
 */
+
+// Conditionals *********
+
+/*
+const x = 15;
+
+if(x === 15) {
+  console.log('x is 15');
+}else if(x > 15){
+  console.log('x is greater than 15');
+}else{
+  console.log('x is less than 15');
+}
+*/
+
+// Multiple Conditions
+/*
+const x = 13;
+const y = 5;
+*/
+/* one of this have to be true -the code will run
+if(x > 12 || y < 6){
+  console.log('x is greater than 12 or y is less than 6');
+}
+*/
+
+/* both of this have to be true 
+if(x > 12 && y < 6){
+  console.log('x is greater than 12 or y is less than 6');
+}
+*/
+
