@@ -252,3 +252,19 @@ switch(color){
 }
 */
 
+// Functions
+/* normal javascript function
+function addNums(num1, num2){
+  return num1 + num2;
+}
+
+console.log(addNums(6,9));
+*/
+
+
+// es6 arrow function
+const addNums = (num1, num2) =>{
+  console.log(num1 + num2);
+}
+
+addNums(6,9);
