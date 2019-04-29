@@ -272,21 +272,31 @@ addNums(6,9);
 
 // es6 classes
 // Constructor Function
-function Person(firstName, lastName, dateOfBirth){
+function Person(firstName, lastName, birthOfDate){
   this.firstName = firstName;
   this.lastName = lastName;
-  this.dateOfBirth = new Date (dateOfBirth);
+  this.birthOfDate = new Date(birthOfDate);
+  /* // this will work but not good - it will show everything you dont want to show
   this.getBirthYear = function() {
-    return this.dateOfBirth.getFullYear();
+    return this.birthOfDate.getFullYear();
   }
   this.getFullName = function() {
     return `${this.firstName} ${this.lastName}`;
   }
+  */
+}
+// use prototype is a better way
+Person.prototype.getBirthYear = function() {
+  return this.birthOfDate.getFullYear();
+}
+
+Person.prototype.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
 }
 
 // Instantiate Object
-const person1 = new Person('rinrin', 'luoway', '21-04-1995');
-const person2 = new Person('chery', 'kawari', '08-07-1996');
+const person1 = new Person('rinrin', 'luoway', '2-4-1995');
+const person2 = new Person('chery', 'kawari', '8-7-1996');
 
-console.log(person2.getBirthYear());
 console.log(person2.getFullName());
+console.log(person1);
