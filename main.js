@@ -261,10 +261,32 @@ function addNums(num1, num2){
 console.log(addNums(6,9));
 */
 
-
+/*
 // es6 arrow function
 const addNums = (num1, num2) =>{
   console.log(num1 + num2);
 }
 
 addNums(6,9);
+*/
+
+// es6 classes
+// Constructor Function
+function Person(firstName, lastName, dateOfBirth){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dateOfBirth = new Date (dateOfBirth);
+  this.getBirthYear = function() {
+    return this.dateOfBirth.getFullYear();
+  }
+  this.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+}
+
+// Instantiate Object
+const person1 = new Person('rinrin', 'luoway', '21-04-1995');
+const person2 = new Person('chery', 'kawari', '08-07-1996');
+
+console.log(person2.getBirthYear());
+console.log(person2.getFullName());
