@@ -304,6 +304,7 @@ console.log(person1);
 */
 
 // Class - this is prettier way to write it but it works the same
+/*
 class Person {
   constructor(firstName, lastName, birthOfDate){
     this.firstName = firstName;
@@ -326,3 +327,21 @@ const person2 = new Person('chery', 'kawari', '8-7-1996');
 
 console.log(person2.getFullName());
 console.log(person1);
+*/
+
+
+//////////////////// with html/css 
+/*
+// Single Element 
+console.log(document.getElementById('my-form'));
+console.log(document.querySelector('.container'));
+
+// Multiple Element - recomended to use querySelectorAll
+console.log(document.querySelectorAll('.item'));
+*/ 
+
+/*
+//looping things
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));
+*/
