@@ -270,21 +270,22 @@ const addNums = (num1, num2) =>{
 addNums(6,9);
 */
 
+/*
 // es6 classes
 // Constructor Function
 function Person(firstName, lastName, birthOfDate){
   this.firstName = firstName;
   this.lastName = lastName;
   this.birthOfDate = new Date(birthOfDate);
-  /* // this will work but not good - it will show everything you dont want to show
+  
+   // this will work but not good - it will show everything you dont want to show
   this.getBirthYear = function() {
     return this.birthOfDate.getFullYear();
   }
   this.getFullName = function() {
     return `${this.firstName} ${this.lastName}`;
   }
-  */
-}
+
 // use prototype is a better way
 Person.prototype.getBirthYear = function() {
   return this.birthOfDate.getFullYear();
@@ -292,6 +293,31 @@ Person.prototype.getBirthYear = function() {
 
 Person.prototype.getFullName = function() {
   return `${this.firstName} ${this.lastName}`;
+}
+
+// Instantiate Object
+const person1 = new Person('rinrin', 'luoway', '2-4-1995');
+const person2 = new Person('chery', 'kawari', '8-7-1996');
+
+console.log(person2.getFullName());
+console.log(person1);
+*/
+
+// Class - this is prettier way to write it but it works the same
+class Person {
+  constructor(firstName, lastName, birthOfDate){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthOfDate = new Date(birthOfDate);
+  }
+
+  getBirthYear() {
+    return this.birthOfDate.getFullYear();
+  }
+
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
 }
 
 // Instantiate Object
