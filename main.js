@@ -345,3 +345,12 @@ console.log(document.querySelectorAll('.item'));
 const items = document.querySelectorAll('.item');
 items.forEach((item) => console.log(item));
 */
+
+// Changing things In The DOM (user interface)
+const ul = document.querySelector('.items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'I Added It';
+ul.children[1].innerText = 'So What I Changed';
+ul.lastElementChild.innerHTML = '<h3>Bigger Text</h3>';
