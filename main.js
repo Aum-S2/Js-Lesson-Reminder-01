@@ -354,3 +354,6 @@ const ul = document.querySelector('.items');
 ul.firstElementChild.textContent = 'I Added It';
 ul.children[1].innerText = 'So What I Changed';
 ul.lastElementChild.innerHTML = '<h3>Bigger Text</h3>';
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
