@@ -346,6 +346,7 @@ const items = document.querySelectorAll('.item');
 items.forEach((item) => console.log(item));
 */
 
+/*
 // Changing things In The DOM (user interface)
 const ul = document.querySelector('.items');
 
@@ -357,3 +358,13 @@ ul.lastElementChild.innerHTML = '<h3>Bigger Text</h3>';
 
 const btn = document.querySelector('.btn');
 btn.style.background = 'red';
+*/
+
+
+// Event
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('#my-form').style.background = '#eee';
+});
